@@ -45,6 +45,11 @@
 				const email = document.getElementById('email').value;
 				const message = document.getElementById('message').value;
 
+				if (!name || !eamil || !message) {
+					window.alert('Please fill the form');
+					return;
+				}
+
 				window.alert(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
 			});
 		</script>
