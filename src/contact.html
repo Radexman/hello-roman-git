@@ -96,7 +96,14 @@
 				const email = document.getElementById('email').value;
 				const message = document.getElementById('message').value;
 
+
+				if (!fullName || !email || !message) {
+					window.alert('Please fill the form');
+					return;
+				}
+
 				window.alert(`Full Name: ${fullName}\nEmail: ${email}\nMessage: ${message}`);
+
 			});
 		</script>
 	</body>
