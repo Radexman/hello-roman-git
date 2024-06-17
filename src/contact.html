@@ -83,13 +83,6 @@
 				required
 			/>
 
-			<label for="message">Message:</label>
-			<textarea
-				name="message"
-				id="message"
-				required
-			></textarea>
-
 			<button type="submit">Submit</button>
 		</form>
 
@@ -99,9 +92,8 @@
 
 				const fullName = document.getElementById('fullName').value;
 				const email = document.getElementById('email').value;
-				const message = document.getElementById('message').value;
 
-				window.alert(`Full Name: ${fullName}\nEmail: ${email}\nMessage: ${message}`);
+				window.alert(`Full Name: ${fullName}\nEmail: ${email}`);
 			});
 		</script>
 	</body>
